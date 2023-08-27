@@ -1,0 +1,744 @@
+{
+  "unversionedAPIContext": {
+    "unversionedAPIs": [
+      "",
+      "/payment",
+      "/securityConfigs",
+      "/welcome",
+      "/assurance/orderid/{orderId}",
+      "/prices/welcome",
+      "/contacts/{id}",
+      "/orders/dtime",
+      "/contacts/account/{accountId}",
+      "/order/query",
+      "/trainfoods/{tripId}",
+      "/{userName}",
+      "/adminbasic/contacts/{contactsId}",
+      "/id/{userId}",
+      "/assurances/{typeIndex}/{orderId}",
+      "/routes",
+      "/payment/money",
+      "/stationfoodstores/{stationId}",
+      "/adminbasic/trains/{id}",
+      "/stationfoodstores/bystoreid/{stationFoodStoreId}",
+      "/hello",
+      "/assurances/orderid/{orderId}",
+      "/order/{travelDate}/{trainNumber}",
+      "/routes/{start}/{end}",
+      "/adminbasic/trains",
+      "/assurances/assuranceid/{assuranceId}",
+      "/createOrderBatch",
+      "/securityConfigs/{id}",
+      "/orders/{orderId}",
+      "/orders/store/{storeId}",
+      "/test_send_mail",
+      "/cancel/refound/{orderId}",
+      "/adminbasic/stations/{id}",
+      "/adminorder",
+      "/orderOther/{travelDate}/{trainNumber}",
+      "/adminbasic/configs/{name}",
+      "/{userId}",
+      "/assurances/{assuranceId}/{orderId}/{typeIndex}",
+      "/orderOther/query",
+      "/stationfoodstores/welcome",
+      "/adminbasic/configs",
+      "/adminbasic/prices",
+      "/orderOther/{orderId}",
+      "/trainfoods",
+      "/order/refresh",
+      "/execute/collected/{orderId}",
+      "/register",
+      "/contacts",
+      "/adminroute",
+      "/login",
+      "/orderOther/admin",
+      "/test_send_delivery",
+      "/order/orderPay/{orderId}",
+      "/stationfoodstores",
+      "/order/{orderId}",
+      "/order/status/{orderId}/{status}",
+      "/foods/{date}/{startStation}/{endStation}/{tripId}",
+      "/trains/welcome",
+      "/waitlistorders",
+      "/orderOther/refresh",
+      "/contacts/admin",
+      "/trainfoods/welcome",
+      "/securityConfigs/{accountId}",
+      "/orders/d/{orderId}",
+      "/assurances",
+      "/contacts/welcome",
+      "/orderOther/status/{orderId}/{status}",
+      "/orders/tripid",
+      "/assurances/types",
+      "/routes/{routeId}",
+      "/generate",
+      "/admintravel",
+      "/order/security/{checkDate}/{accountId}",
+      "/orderOther",
+      "/adminbasic/prices/{pricesId}",
+      "/adminbasic/stations",
+      "/test_send_mq",
+      "/adminbasic/contacts",
+      "/orderOther/orderPay/{orderId}",
+      "/contacts/{contactsId}",
+      "/orders/all",
+      "/cancel/{orderId}/{loginId}",
+      "/order/price/{orderId}",
+      "/orders",
+      "/routes/byIds",
+      "/order/admin",
+      "/orders/seatno",
+      "/execute/execute/{orderId}",
+      "/orderOther/price/{orderId}",
+      "/order",
+      "/orderOther/security/{checkDate}/{accountId}"
+    ],
+    "count": 91
+  },
+  "hardCodedEndpointsContext": {
+    "hardcodedEndpoints": [],
+    "totalHardcodedEndpoints": 0,
+    "totalHardcodedPorts": 0,
+    "totalHardcodedIP": 0
+  },
+  "esbContext": {
+    "candidateESBs": []
+  },
+  "cyclicDependency": false,
+  "sharedPersistencyContext": {
+    "sharedPersistencies": []
+  },
+  "sharedLibraryContext": {
+    "sharedLibraries": {
+      "org.springframework.boot:spring-boot-starter-data-jpa": {
+        "library": "org.springframework.boot:spring-boot-starter-data-jpa",
+        "microservices": [
+          "fdse.microservice:ts-consign-price-service",
+          "fdse.microservice:ts-station-service",
+          "fdse.microservice:ts-food-delivery-service",
+          "fdse.microservice:ts-food-service",
+          "fdse.microservice:ts-travel-service",
+          "fdse.microservice:ts-consign-service",
+          "fdse.microservice:ts-user-service",
+          "fdse.microservice:ts-delivery-service",
+          "fdse.microservice:ts-payment-service",
+          "fdse.microservice:ts-notification-service",
+          "fdse.microservice:ts-travel2-service",
+          "fdse.microservice:ts-security-service",
+          "fdse.microservice:ts-price-service",
+          "fdse.microservice:ts-assurance-service",
+          "fdse.microservice:ts-order-other-service",
+          "fdse.microservice:ts-inside-payment-service",
+          "fdse.microservice:ts-order-service",
+          "fdse.microservice:ts-config-service",
+          "fdse.microservice:ts-wait-order-service",
+          "fdse.microservice:ts-auth-service",
+          "fdse.microservice:ts-train-food-service",
+          "fdse.microservice:ts-route-service",
+          "fdse.microservice:ts-train-service",
+          "fdse.microservice:ts-contacts-service",
+          "fdse.microservice:ts-station-food-service"
+        ],
+        "count": 25
+      },
+      "org.services:ts-common": {
+        "library": "org.services:ts-common",
+        "microservices": [
+          "fdse.microservice:ts-consign-price-service",
+          "fdse.microservice:ts-station-service",
+          "fdse.microservice:ts-food-delivery-service",
+          "fdse.microservice:ts-food-service",
+          "fdse.microservice:ts-cancel-service",
+          "fdse.microservice:ts-execute-service",
+          "fdse.microservice:ts-travel-service",
+          "fdse.microservice:ts-admin-order-service",
+          "fdse.microservice:ts-consign-service",
+          "fdse.microservice:ts-user-service",
+          "fdse.microservice:ts-delivery-service",
+          "fdse.microservice:ts-preserve-service",
+          "fdse.microservice:ts-admin-travel-service",
+          "fdse.microservice:ts-admin-user-service",
+          "fdse.microservice:ts-payment-service",
+          "fdse.microservice:ts-notification-service",
+          "fdse.microservice:ts-travel2-service",
+          "fdse.microservice:ts-security-service",
+          "fdse.microservice:ts-price-service",
+          "fdse.microservice:ts-assurance-service",
+          "fdse.microservice:ts-verification-code-service",
+          "fdse.microservice:ts-basic-service",
+          "fdse.microservice:ts-order-other-service",
+          "fdse.microservice:ts-admin-route-service",
+          "fdse.microservice:ts-inside-payment-service",
+          "fdse.microservice:ts-order-service",
+          "fdse.microservice:ts-seat-service",
+          "fdse.microservice:ts-config-service",
+          "fdse.microservice:ts-travel-plan-service",
+          "fdse.microservice:ts-wait-order-service",
+          "fdse.microservice:ts-admin-basic-info-service",
+          "fdse.microservice:ts-auth-service",
+          "fdse.microservice:ts-train-food-service",
+          "fdse.microservice:ts-rebook-service",
+          "fdse.microservice:ts-route-service",
+          "fdse.microservice:ts-train-service",
+          "fdse.microservice:ts-preserve-other-service",
+          "fdse.microservice:ts-contacts-service",
+          "fdse.microservice:ts-route-plan-service",
+          "fdse.microservice:ts-station-food-service"
+        ],
+        "count": 40
+      },
+      "jakarta.validation:jakarta.validation-api": {
+        "library": "jakarta.validation:jakarta.validation-api",
+        "microservices": [
+          "fdse.microservice:ts-travel2-service",
+          "fdse.microservice:ts-price-service",
+          "fdse.microservice:ts-assurance-service",
+          "null:ts-common",
+          "fdse.microservice:ts-basic-service",
+          "fdse.microservice:ts-order-other-service",
+          "fdse.microservice:ts-inside-payment-service",
+          "fdse.microservice:ts-station-service",
+          "fdse.microservice:ts-order-service",
+          "fdse.microservice:ts-food-delivery-service",
+          "fdse.microservice:ts-seat-service",
+          "fdse.microservice:ts-config-service",
+          "fdse.microservice:ts-travel-service",
+          "fdse.microservice:ts-wait-order-service",
+          "fdse.microservice:ts-admin-basic-info-service",
+          "fdse.microservice:ts-train-food-service",
+          "fdse.microservice:ts-rebook-service",
+          "fdse.microservice:ts-train-service",
+          "fdse.microservice:ts-preserve-service",
+          "fdse.microservice:ts-preserve-other-service",
+          "fdse.microservice:ts-payment-service",
+          "fdse.microservice:ts-station-food-service"
+        ],
+        "count": 22
+      },
+      "org.springframework.boot:spring-boot-starter-amqp": {
+        "library": "org.springframework.boot:spring-boot-starter-amqp",
+        "microservices": [
+          "fdse.microservice:ts-delivery-service",
+          "fdse.microservice:ts-preserve-service",
+          "fdse.microservice:ts-preserve-other-service",
+          "fdse.microservice:ts-food-service"
+        ],
+        "count": 4
+      },
+      "io.springfox:springfox-swagger2": {
+        "library": "io.springfox:springfox-swagger2",
+        "microservices": [
+          "fdse.microservice:ts-delivery-service",
+          "org.services:ts-service"
+        ],
+        "count": 2
+      },
+      "org.springframework.boot:spring-boot-starter-web": {
+        "library": "org.springframework.boot:spring-boot-starter-web",
+        "microservices": [
+          "myproject.microservices:micro-service-monitoring-core",
+          "org.services:ts-service"
+        ],
+        "count": 2
+      },
+      "io.jsonwebtoken:jjwt": {
+        "library": "io.jsonwebtoken:jjwt",
+        "microservices": [
+          "null:ts-common",
+          "fdse.microservice:ts-auth-service"
+        ],
+        "count": 2
+      }
+    }
+  },
+  "microservicesGreedyContext": {
+    "microserviceMetrics": [
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\.git",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\.github",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\.idea",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\deployment",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\hack",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\image",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\jenkins-ci",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\old-docs",
+        "staticFileCount": 7,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\script",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-admin-basic-info-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-admin-order-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-admin-route-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-admin-travel-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-admin-user-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-assurance-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-auth-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-avatar-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-basic-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-cancel-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-common",
+        "staticFileCount": 0,
+        "entityFileCount": 38
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-config-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-consign-price-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-consign-service",
+        "staticFileCount": 0,
+        "entityFileCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-contacts-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-delivery-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-execute-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-food-delivery-service",
+        "staticFileCount": 0,
+        "entityFileCount": 5
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-food-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-gateway-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-inside-payment-service",
+        "staticFileCount": 0,
+        "entityFileCount": 6
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-news-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-notification-service",
+        "staticFileCount": 0,
+        "entityFileCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-order-other-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-order-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-payment-service",
+        "staticFileCount": 0,
+        "entityFileCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-preserve-other-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-preserve-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-price-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-rebook-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-route-plan-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-route-service",
+        "staticFileCount": 0,
+        "entityFileCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-seat-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-security-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-station-food-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-station-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-ticket-office-service",
+        "staticFileCount": 1060,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-train-food-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-train-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-travel-plan-service",
+        "staticFileCount": 0,
+        "entityFileCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-travel-service",
+        "staticFileCount": 0,
+        "entityFileCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-travel2-service",
+        "staticFileCount": 0,
+        "entityFileCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-ui-dashboard",
+        "staticFileCount": 108,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-user-service",
+        "staticFileCount": 0,
+        "entityFileCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-verification-code-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-voucher-service",
+        "staticFileCount": 0,
+        "entityFileCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\ts-wait-order-service",
+        "staticFileCount": 0,
+        "entityFileCount": 2
+      }
+    ],
+    "greedyMicroservices": []
+  },
+  "wrongCutsContext": {
+    "entityCounts": [
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_preserve_other_service_jar\\ts-preserve-other-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_admin_travel_service_jar\\ts-admin-travel-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_seat_service_jar\\ts-seat-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_admin_route_service_jar\\ts-admin-route-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_execute_service_jar\\ts-execute-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_basic_service_jar\\ts-basic-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_verification_code_service_jar\\ts-verification-code-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_admin_order_service_jar\\ts-admin-order-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_admin_user_service_jar\\ts-admin-user-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_route_plan_service_jar\\ts-route-plan-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_gateway_service_jar\\ts-gateway-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_preserve_service_jar\\ts-preserve-service.jar",
+        "entityCount": 0
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_user_service_jar\\ts-user-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_delivery_service_jar\\ts-delivery-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_contacts_service_jar\\ts-contacts-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_security_service_jar\\ts-security-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_price_service_jar\\ts-price-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_rebook_service_jar\\ts-rebook-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_train_service_jar\\ts-train-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_config_service_jar\\ts-config-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_station_food_service_jar\\ts-station-food-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_consign_price_service_jar\\ts-consign-price-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_admin_basic_info_service_jar\\ts-admin-basic-info-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_auth_service_jar\\ts-auth-service.jar",
+        "entityCount": 1
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_notification_service_jar\\ts-notification-service.jar",
+        "entityCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_wait_order_service_jar\\ts-wait-order-service.jar",
+        "entityCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_payment_service_jar\\ts-payment-service.jar",
+        "entityCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_route_service_jar\\ts-route-service.jar",
+        "entityCount": 2
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_food_service_jar\\ts-food-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_order_service_jar\\ts-order-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_cancel_service_jar\\ts-cancel-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_travel_plan_service_jar\\ts-travel-plan-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_order_other_service_jar\\ts-order-other-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_assurance_service_jar\\ts-assurance-service.jar",
+        "entityCount": 3
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_travel2_service_jar\\ts-travel2-service.jar",
+        "entityCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_travel_service_jar\\ts-travel-service.jar",
+        "entityCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_consign_service_jar\\ts-consign-service.jar",
+        "entityCount": 4
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_food_delivery_service_jar\\ts-food-delivery-service.jar",
+        "entityCount": 5
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_inside_payment_service_jar\\ts-inside-payment-service.jar",
+        "entityCount": 6
+      },
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_common_jar\\ts-common.jar",
+        "entityCount": 38
+      }
+    ],
+    "possibleWrongCuts": [
+      {
+        "path": "C:\\Users\\kusha\\IdeaProjects\\train-ticket\\out\\artifacts\\ts_common_jar\\ts-common.jar",
+        "entityCount": 38
+      }
+    ]
+  },
+  "inappropriateServiceIntimacyContext": {
+    "sharedIntimacies": [],
+    "count": 0
+  },
+  "tooManyStandardsContext": {
+    "presentationTypes": [
+      "STATIC"
+    ],
+    "businessTypes": [
+      "SPRING"
+    ],
+    "dataTypes": [
+      "MYSQL"
+    ]
+  },
+  "times": {
+    "Too Many Standards": 1403,
+    "Wrong Cuts": 19209,
+    "Bytecode Analysis": 0,
+    "Shared Persistency": 567,
+    "Shared Library": 2199,
+    "ESB": 0,
+    "Microservice Greedy": 27631,
+    "Unversioned API": 22274,
+    "Hardcoded Enpoints": 0,
+    "Cyclic Dependency": 0,
+    "API Gateway": 0,
+    "ISI": 0
+  },
+  "apigateway": false
+}

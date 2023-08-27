@@ -1,0 +1,133 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "/{userId}",
+            "/catalog/{userId}",
+            "/ratings/{userId}",
+            "/movies/{movieId}",
+            "/{movieId}"
+        ],
+        "count": 5
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.springframework.boot:spring-boot-starter-test": {
+                "library": "org.springframework.boot:spring-boot-starter-test",
+                "microservices": [
+                    "com.example:movie-info-service",
+                    "com.example:ratings-service",
+                    "com:discovery-server",
+                    "com:movie-catalog-service"
+                ],
+                "count": 4
+            },
+            "org.springframework.boot:spring-boot-starter-web": {
+                "library": "org.springframework.boot:spring-boot-starter-web",
+                "microservices": [
+                    "com.example:movie-info-service",
+                    "com.example:ratings-service",
+                    "com:movie-catalog-service"
+                ],
+                "count": 3
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\discovery-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\movie-catalog-service",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\movie-info-service",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\ratings-data-service",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\out\\artifacts\\movie_catalog_service_jar\\movie-catalog-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\out\\artifacts\\discovery_server_jar\\discovery-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices\\out\\artifacts\\movie_info_service_jar\\movie-info-service.jar",
+                "entityCount": 0
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 34,
+        "Wrong Cuts": 105,
+        "Bytecode Analysis": 0,
+        "Shared Persistency": 12,
+        "Shared Library": 17,
+        "ESB": 2,
+        "Microservice Greedy": 155,
+        "Unversioned API": 129,
+        "Hardcoded Enpoints": 1,
+        "Cyclic Dependency": 1,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

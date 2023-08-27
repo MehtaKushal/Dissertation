@@ -1,0 +1,281 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "",
+            "/all",
+            "/question/export/{questionId}",
+            "/category/export",
+            "/question",
+            "/userinfo/usernames",
+            "/userinfo/updateUser",
+            "/test",
+            "/usernames",
+            "/question/checkSyntax",
+            "/userinfo/addUser",
+            "/userinfo/userById/{id}",
+            "/exam/{email}",
+            "/addUser",
+            "/question/all",
+            "/userinfo/changePassword/{id}",
+            "/deleteUserByUsername/{username}",
+            "/categoryinfo",
+            "/language/{languageId}",
+            "/{categoryId}",
+            "/configuration/{configurationId}",
+            "/usernamesLike",
+            "categoryInfo",
+            "/userById/{id}",
+            "/{questionId}",
+            "/deleteUser/{id}",
+            "/question/{questionId}",
+            "/userIdByUsername/{username}",
+            "/userByUsername/{username}",
+            "/userinfo/validId/{id}",
+            "/userinfo/users",
+            "/category",
+            "/addUserRoles/{username}",
+            "/create",
+            "/question/exportFiltered",
+            "/userinfo/addUsers",
+            "/userinfo/deleteUser/{id}",
+            "configuration",
+            "/userinfo/usernamesLike",
+            "/configuration",
+            "/{languageId}",
+            "/userinfo/userRoles/{username}",
+            "/export",
+            "/checkSyntax",
+            "/addUsers",
+            "/category/{categoryId}",
+            "/userinfo/userByUsername/{username}",
+            "/validId/{id}",
+            "/userinfo/userIdByUsername/{username}",
+            "/exam/create",
+            "/users",
+            "/language",
+            "/changePassword/{id}",
+            "/{configurationId}",
+            "/userinfo/addUserRoles/{username}",
+            "/userinfo/emailInUse/{email}",
+            "/exportFiltered",
+            "/{email}",
+            "/language/export",
+            "/export/{questionId}",
+            "/question/export",
+            "/emailInUse/{email}",
+            "configuration/{configurationId}",
+            "/userinfo/deleteUserByUsername/{username}",
+            "/userRoles/{username}",
+            "/updateUser"
+        ],
+        "count": 66
+    },
+    "hardCodedEndpointsContext": {        
+		"hardcodedEndpoints": [
+			{
+				"restEntity": {
+					"url": "http://qms:12345/qms/test?configId={1}",
+					"applicationName": null,
+					"ribbonServerName": null,
+					"resourcePath": "C:\\D\\Kushal\\git\\tms2020\\out\\artifacts\\ems_jar\\ems.jar",
+					"className": "edu.baylor.ems.service.QmsService",
+					"methodName": "getQuestions",
+					"returnType": "java.util.List<edu.baylor.ems.dto.QuestionQmsDto>",
+					"path": "/",
+					"httpMethod": "GET",
+					"pathParams": null,
+					"queryParams": null,
+					"consumeType": null,
+					"produceType": null,
+					"client": true
+				},
+				"type": "PORT"
+			},
+			{
+				"restEntity": {
+					"url": "http://qms:12345/qms/configuration/{1}",
+					"applicationName": null,
+					"ribbonServerName": null,
+					"resourcePath": "C:\\D\\Kushal\\git\\tms2020\\out\\artifacts\\ems_jar\\ems.jar",
+					"className": "edu.baylor.ems.service.QmsService",
+					"methodName": "getConfigName",
+					"returnType": "java.lang.String",
+					"path": "/",
+					"httpMethod": "GET",
+					"pathParams": null,
+					"queryParams": null,
+					"consumeType": null,
+					"produceType": null,
+					"client": true
+				},
+				"type": "PORT"
+			}
+		],
+		"totalHardcodedEndpoints": 2,
+		"totalHardcodedPorts": 2,
+		"totalHardcodedIP": 0
+	},
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.springframework.boot:spring-boot-starter-data-jpa": {
+                "library": "org.springframework.boot:spring-boot-starter-data-jpa",
+                "microservices": [
+                    "edu.baylor:ems",
+                    "baylor.csi:questionManagement",
+                    "edu.baylor.ecs.seer:user-management",
+                    "edu.baylor.ecs:cms"
+                ],
+                "count": 4
+            },
+            "org.springframework.boot:spring-boot-starter-web": {
+                "library": "org.springframework.boot:spring-boot-starter-web",
+                "microservices": [
+                    "edu.baylor:ems",
+                    "baylor.csi:questionManagement",
+                    "edu.baylor.ecs.seer:user-management"
+                ],
+                "count": 3
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\cms",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\cms-client",
+                "staticFileCount": 29,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\doc",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\ems",
+                "staticFileCount": 0,
+                "entityFileCount": 3
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\ems-client",
+                "staticFileCount": 21,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\keycloak",
+                "staticFileCount": 228,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\META-INF",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\nginx",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\postgres",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\qms",
+                "staticFileCount": 0,
+                "entityFileCount": 8
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\qms-client",
+                "staticFileCount": 38,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\selenium",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\ums",
+                "staticFileCount": 0,
+                "entityFileCount": 3
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\ums-client",
+                "staticFileCount": 30,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\out\\artifacts\\cms_jar\\cms.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\tms2020\\out\\artifacts\\ems_jar\\ems.jar",
+                "entityCount": 3
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": [
+            "GENERIC"
+        ]
+    },
+    "times": {
+        "Too Many Standards": 165,
+        "Wrong Cuts": 483,
+        "Bytecode Analysis": 0,
+        "Shared Persistency": 679,
+        "Shared Library": 61,
+        "ESB": 0,
+        "Microservice Greedy": 1372,
+        "Unversioned API": 1228,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 0,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

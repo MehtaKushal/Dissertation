@@ -1,0 +1,120 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "/greeting"
+        ],
+        "count": 1
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {}
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\helidon-se",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\javalin",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\micronaut",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\quarkus",
+                "staticFileCount": 2,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\spring-boot",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\tomee",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\out\\artifacts\\quarkus_jar\\quarkus.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\out\\artifacts\\helidon_se_jar\\helidon-se.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\java-microservices\\out\\artifacts\\spring_boot_jar\\spring-boot.jar",
+                "entityCount": 0
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "EE",
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 45,
+        "Wrong Cuts": 66,
+        "Bytecode Analysis": 12729,
+        "Shared Persistency": 19,
+        "Shared Library": 32,
+        "ESB": 1,
+        "Microservice Greedy": 82,
+        "Unversioned API": 348,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 1,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

@@ -1,0 +1,182 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "/currency-exchange/from/{from}/to/{to}",
+            "/fault-tolerance-example",
+            "/currency-converter-feign/from/{from}/to/{to}/quantity/{quantity}",
+            "/limits",
+            "/currency-converter/from/{from}/to/{to}/quantity/{quantity}"
+        ],
+        "count": 5
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.springframework.cloud:spring-cloud-starter-sleuth": {
+                "library": "org.springframework.cloud:spring-cloud-starter-sleuth",
+                "microservices": [
+                    "com.in28minutes.microservices:currency-conversion-service",
+                    "com.in28minutes.microservices:netflix-zuul-api-gateway-server"
+                ],
+                "count": 2
+            },
+            "org.springframework.boot:spring-boot-starter-test": {
+                "library": "org.springframework.boot:spring-boot-starter-test",
+                "microservices": [
+                    "com.in28minutes.microservices:spring-cloud-config-server",
+                    "com.in28minutes.microservices:netflix-zuul-api-gateway-server",
+                    "com.in28minutes.microservices:netflix-eureka-naming-server"
+                ],
+                "count": 3
+            },
+            "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client": {
+                "library": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+                "microservices": [
+                    "com.in28minutes.microservices:currency-exchange-service",
+                    "com.in28minutes.microservices:netflix-zuul-api-gateway-server"
+                ],
+                "count": 2
+            },
+            "org.springframework.cloud:spring-cloud-starter-bus-amqp": {
+                "library": "org.springframework.cloud:spring-cloud-starter-bus-amqp",
+                "microservices": [
+                    "com.in28minutes.microservices:limits-service",
+                    "com.in28minutes.microservices:currency-conversion-service",
+                    "com.in28minutes.microservices:spring-cloud-config-server",
+                    "com.in28minutes.microservices:currency-exchange-service",
+                    "com.in28minutes.microservices:netflix-zuul-api-gateway-server"
+                ],
+                "count": 5
+            },
+            "org.springframework.cloud:spring-cloud-starter-config": {
+                "library": "org.springframework.cloud:spring-cloud-starter-config",
+                "microservices": [
+                    "com.in28minutes.microservices:limits-service",
+                    "com.in28minutes.microservices:currency-conversion-service",
+                    "com.in28minutes.microservices:currency-exchange-service",
+                    "com.in28minutes.microservices:netflix-eureka-naming-server"
+                ],
+                "count": 4
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\currency-conversion-service",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\currency-exchange-service",
+                "staticFileCount": 0,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\git-localconfig-repo",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\limits-service",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\netflix-eureka-naming-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\netflix-zuul-api-gateway-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\spring-cloud-config-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\netflix_eureka_naming_server_jar\\netflix-eureka-naming-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\limits_service_jar\\limits-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\spring_cloud_config_server_jar\\spring-cloud-config-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\currency_conversion_service_jar\\currency-conversion-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\netflix_zuul_api_gateway_server_jar\\netflix-zuul-api-gateway-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-microservices\\03.microservices\\out\\artifacts\\currency_exchange_service_jar\\currency-exchange-service.jar",
+                "entityCount": 1
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 293,
+        "Wrong Cuts": 169,
+        "Bytecode Analysis": 0,
+        "Shared Persistency": 403,
+        "Shared Library": 54,
+        "ESB": 0,
+        "Microservice Greedy": 237,
+        "Unversioned API": 227,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 0,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

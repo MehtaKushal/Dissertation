@@ -1,0 +1,87 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "/accounts/owner/{name}",
+            "/accounts/{accountNumber}"
+        ],
+        "count": 2
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {}
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices-demo\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices-demo\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices-demo\\.mvn",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices-demo\\gradle",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices-demo\\src",
+                "staticFileCount": 13,
+                "entityFileCount": 1
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 21,
+        "Wrong Cuts": 8,
+        "Bytecode Analysis": 4,
+        "Shared Persistency": 2,
+        "Shared Library": 7,
+        "ESB": 0,
+        "Microservice Greedy": 103,
+        "Unversioned API": 403,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 1,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

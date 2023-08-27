@@ -1,0 +1,594 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "/hi",
+            "/{username}/vehicle",
+            "/echo",
+            "/down",
+            "/project-name",
+            "/user",
+            "/cloudinfo",
+            "/up",
+            "/{username}/vehicle.html",
+            "/{userId}/passport",
+            "/"
+        ],
+        "count": 11
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.springframework.boot:spring-boot-starter-data-jpa": {
+                "library": "org.springframework.boot:spring-boot-starter-data-jpa",
+                "microservices": [
+                    "null:livelessons-choreography-contact-service",
+                    "null:livelessons-data-jpa",
+                    "com.example:auth-service",
+                    "null:livelessons-rest-basic",
+                    "null:livelessons-data-rest",
+                    "null:livelessons-choreography-bookmark-service",
+                    "com.example:basic",
+                    "null:livelessons-rest-errors",
+                    "null:livelessons-data-flyway",
+                    "null:livelessons-testing-spring",
+                    "com.example:x509",
+                    "null:livelessons-edge-greetings-service"
+                ],
+                "count": 12
+            },
+            "org.springframework.cloud:spring-cloud-starter-feign": {
+                "library": "org.springframework.cloud:spring-cloud-starter-feign",
+                "microservices": [
+                    "null:livelessons-choreography-hystrix",
+                    "null:livelessons-choreography-gateway"
+                ],
+                "count": 2
+            },
+            "org.springframework.boot:spring-boot-starter-jdbc": {
+                "library": "org.springframework.boot:spring-boot-starter-jdbc",
+                "microservices": [
+                    "null:livelessons-cloud-services",
+                    "null:livelessons-operations-monitoring",
+                    "null:livelessons-cloud-connectors",
+                    "null:livelessons-data-jdbc",
+                    "null:livelessons-security-basic",
+                    "null:livelessons-security-https",
+                    "null:livelessons-security-sso-auth-server"
+                ],
+                "count": 7
+            },
+            "org.springframework.cloud:spring-cloud-starter-zuul": {
+                "library": "org.springframework.cloud:spring-cloud-starter-zuul",
+                "microservices": [
+                    "null:livelessons-security-sso-ui",
+                    "null:livelessons-choreography-gateway",
+                    "null:livelessons-edge-eureka-client",
+                    "null:livelessons-choreography-ribbon-and-eureka"
+                ],
+                "count": 4
+            },
+            "org.apache.httpcomponents:httpclient": {
+                "library": "org.apache.httpcomponents:httpclient",
+                "microservices": [
+                    "null:livelessons-security-basic",
+                    "null:livelessons-security-https",
+                    "com.example:x509"
+                ],
+                "count": 3
+            },
+            "org.springframework.boot:spring-boot-starter": {
+                "library": "org.springframework.boot:spring-boot-starter",
+                "microservices": [
+                    "null:livelessons-cloud-s3",
+                    "null:livelessons-testing-wiremock",
+                    "null:livelessons-extending-sample",
+                    "null:livelessons-extending-autoconfigure",
+                    "null:livelessons-ide-and-tooling-metadata"
+                ],
+                "count": 5
+            },
+            "org.springframework.cloud:spring-cloud-starter-oauth2": {
+                "library": "org.springframework.cloud:spring-cloud-starter-oauth2",
+                "microservices": [
+                    "com.example:greetings-service",
+                    "com.example:auth-service",
+                    "com.example:edge-service"
+                ],
+                "count": 3
+            },
+            "org.springframework.security.oauth:spring-security-oauth2": {
+                "library": "org.springframework.security.oauth:spring-security-oauth2",
+                "microservices": [
+                    "null:livelessons-security-sso-resource",
+                    "null:livelessons-security-sso-auth-server"
+                ],
+                "count": 2
+            },
+            "org.springframework.cloud:spring-cloud-starter-hystrix": {
+                "library": "org.springframework.cloud:spring-cloud-starter-hystrix",
+                "microservices": [
+                    "null:livelessons-choreography-hystrix",
+                    "null:livelessons-edge-eureka-client",
+                    "null:livelessons-choreography-ribbon-and-eureka"
+                ],
+                "count": 3
+            },
+            "org.springframework.boot:spring-boot-configuration-processor": {
+                "library": "org.springframework.boot:spring-boot-configuration-processor",
+                "microservices": [
+                    "null:livelessons-testing-wiremock",
+                    "null:livelessons-configuration-basic",
+                    "null:livelessons-testing-spring",
+                    "null:livelessons-extending-autoconfigure",
+                    "null:livelessons-ide-and-tooling-metadata"
+                ],
+                "count": 5
+            },
+            "org.springframework.boot:spring-boot-starter-web": {
+                "library": "org.springframework.boot:spring-boot-starter-web",
+                "microservices": [
+                    "com.example:auth-service",
+                    "null:livelessons-cloud-cloudfoundry",
+                    "null:livelessons-cloud-session",
+                    "null:livelessons-choreography-gateway",
+                    "null:livelessons-rest-errors",
+                    "com.example:x509",
+                    "null:livelessons-edge-greetings-service",
+                    "null:livelessons-ide-and-tooling-devtools",
+                    "null:livelessons-web-templates",
+                    "null:livelessons-cloud-services",
+                    "livelessons:livelessons-bootstrap-maven",
+                    "null:livelessons-choreography-hystrix",
+                    "com.example:greetings-service",
+                    "null:livelessons-cloud-connectors",
+                    "null:livelessons-configuration-cloudclient",
+                    "null:livelessons-operations-metrics",
+                    "null:livelessons-rest-basic",
+                    "null:livelessons-cloud-docker",
+                    "null:livelessons-security-https",
+                    "null:livelessons-ide-and-tooling-initializr",
+                    "com.example:basic",
+                    "null:livelessons-integration-producer",
+                    "null:livelessons-operations-logging",
+                    "null:livelessons-bootstrap-autoconfiguration-jetty",
+                    "null:livelessons-choreography-ribbon-and-eureka",
+                    "null:livelessons-testing-spring",
+                    "null:livelessons-choreography-contact-service",
+                    "null:livelessons-operations-monitoring",
+                    "null:livelessons-operations-cloud-metrics",
+                    "null:livelessons-configuration-basic",
+                    "null:livelessons-integration-and-batch",
+                    "null:livelessons-security-sso-ui",
+                    "null:livelessons-cloud-heroku",
+                    "null:livelessons-integration-eai",
+                    "null:livelessons-operations-cloud-monitoring",
+                    "null:livelessons-security-basic",
+                    "null:livelessons-choreography-bookmark-service",
+                    "null:livelessons-security-sso-auth-server",
+                    "null:livelessons-operations-actuator",
+                    "null:livelessons-web-transforms",
+                    "null:livelessons-web-resources-angular",
+                    "null:livelessons-web-resources",
+                    "null:livelessons-data-rest",
+                    "null:livelessons-operations-actuator-extensions",
+                    "null:livelessons-bootstrap-autoconfiguration",
+                    "null:livelessons-edge-eureka-client",
+                    "com.example:edge-service"
+                ],
+                "count": 47
+            },
+            "org.springframework.boot:spring-boot-starter-security": {
+                "library": "org.springframework.boot:spring-boot-starter-security",
+                "microservices": [
+                    "null:livelessons-security-sso-ui",
+                    "null:livelessons-security-basic",
+                    "null:livelessons-security-https",
+                    "com.example:basic",
+                    "null:livelessons-security-sso-auth-server",
+                    "com.example:x509"
+                ],
+                "count": 6
+            },
+            "org.springframework.cloud:spring-cloud-starter-security": {
+                "library": "org.springframework.cloud:spring-cloud-starter-security",
+                "microservices": [
+                    "null:livelessons-security-sso-ui",
+                    "null:livelessons-security-sso-resource"
+                ],
+                "count": 2
+            },
+            "org.springframework.cloud:spring-cloud-starter-eureka-server": {
+                "library": "org.springframework.cloud:spring-cloud-starter-eureka-server",
+                "microservices": [
+                    "null:livelessons-edge-eureka-service",
+                    "null:livelessons-choreography-eureka-service"
+                ],
+                "count": 2
+            },
+            "org.springframework.boot:spring-boot-starter-test": {
+                "library": "org.springframework.boot:spring-boot-starter-test",
+                "microservices": [
+                    "null:livelessons-testing-wiremock",
+                    "com.example:auth-service",
+                    "null:livelessons-integration-consumer",
+                    "null:livelessons-integration-and-batch",
+                    "null:livelessons-integration-eai",
+                    "null:livelessons-security-basic",
+                    "com.example:x509",
+                    "null:livelessons-ide-and-tooling-metadata",
+                    "null:livelessons-edge-greetings-service",
+                    "null:livelessons-integration-basic-messaging",
+                    "null:livelessons-ide-and-tooling-devtools",
+                    "com.example:greetings-service",
+                    "null:livelessons-data-rest",
+                    "null:livelessons-edge-eureka-service",
+                    "null:livelessons-integration-dataflow-service",
+                    "null:livelessons-security-https",
+                    "null:livelessons-ide-and-tooling-initializr",
+                    "null:livelessons-edge-eureka-client",
+                    "com.example:basic",
+                    "null:livelessons-extending-sample",
+                    "null:livelessons-integration-producer",
+                    "null:livelessons-testing-spring",
+                    "com.example:edge-service"
+                ],
+                "count": 23
+            },
+            "org.springframework.boot:spring-boot-starter-amqp": {
+                "library": "org.springframework.boot:spring-boot-starter-amqp",
+                "microservices": [
+                    "null:livelessons-integration-basic-messaging",
+                    "null:livelessons-integration-eai"
+                ],
+                "count": 2
+            },
+            "org.springframework.cloud:spring-cloud-starter-eureka": {
+                "library": "org.springframework.cloud:spring-cloud-starter-eureka",
+                "microservices": [
+                    "null:livelessons-choreography-contact-service",
+                    "null:livelessons-choreography-hystrix",
+                    "null:livelessons-choreography-bookmark-service",
+                    "null:livelessons-choreography-gateway",
+                    "null:livelessons-edge-eureka-client",
+                    "null:livelessons-choreography-ribbon-and-eureka",
+                    "null:livelessons-edge-greetings-service"
+                ],
+                "count": 7
+            },
+            "org.springframework.cloud:spring-cloud-starter-stream-rabbit": {
+                "library": "org.springframework.cloud:spring-cloud-starter-stream-rabbit",
+                "microservices": [
+                    "null:livelessons-integration-consumer",
+                    "null:livelessons-integration-producer"
+                ],
+                "count": 2
+            },
+            "org.springframework.boot:spring-boot-starter-batch": {
+                "library": "org.springframework.boot:spring-boot-starter-batch",
+                "microservices": [
+                    "null:livelessons-integration-batch",
+                    "null:livelessons-integration-consumer",
+                    "null:livelessons-integration-and-batch"
+                ],
+                "count": 3
+            },
+            "org.springframework.boot:spring-boot-starter-redis": {
+                "library": "org.springframework.boot:spring-boot-starter-redis",
+                "microservices": [
+                    "null:livelessons-data-redis",
+                    "null:livelessons-cloud-session"
+                ],
+                "count": 2
+            },
+            "org.springframework.boot:spring-boot-starter-actuator": {
+                "library": "org.springframework.boot:spring-boot-starter-actuator",
+                "microservices": [
+                    "null:livelessons-operations-monitoring",
+                    "null:livelessons-operations-cloud-metrics",
+                    "null:livelessons-configuration-basic",
+                    "null:livelessons-cloud-cloudfoundry",
+                    "null:livelessons-cloud-heroku",
+                    "null:livelessons-operations-cloud-monitoring",
+                    "null:livelessons-cloud-session",
+                    "null:livelessons-security-basic",
+                    "null:livelessons-operations-actuator",
+                    "null:livelessons-cloud-services",
+                    "null:livelessons-choreography-hystrix",
+                    "null:livelessons-cloud-connectors",
+                    "null:livelessons-configuration-cloudclient",
+                    "null:livelessons-operations-metrics",
+                    "null:livelessons-security-https",
+                    "null:livelessons-operations-actuator-extensions"
+                ],
+                "count": 16
+            },
+            "com.h2database:h2": {
+                "library": "com.h2database:h2",
+                "microservices": [
+                    "null:livelessons-choreography-contact-service",
+                    "com.example:auth-service",
+                    "null:livelessons-integration-consumer",
+                    "null:livelessons-integration-and-batch",
+                    "null:livelessons-security-basic",
+                    "null:livelessons-choreography-bookmark-service",
+                    "null:livelessons-security-sso-auth-server",
+                    "null:livelessons-rest-errors",
+                    "null:livelessons-data-flyway",
+                    "com.example:x509",
+                    "null:livelessons-edge-greetings-service",
+                    "null:livelessons-data-jpa",
+                    "null:livelessons-integration-batch",
+                    "null:livelessons-rest-basic",
+                    "null:livelessons-data-jdbc",
+                    "null:livelessons-security-https",
+                    "null:livelessons-data-rest",
+                    "com.example:basic",
+                    "null:livelessons-testing-spring"
+                ],
+                "count": 19
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\eclipse",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-bootstrap",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-choreography",
+                "staticFileCount": 0,
+                "entityFileCount": 2
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-cloud",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-configuration",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-data",
+                "staticFileCount": 0,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-edge",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-extending",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-ide-and-tooling",
+                "staticFileCount": 2,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-integration",
+                "staticFileCount": 4,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-operations",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-parent",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-rest",
+                "staticFileCount": 0,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-security",
+                "staticFileCount": 4,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-testing",
+                "staticFileCount": 2,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\livelessons-web",
+                "staticFileCount": 111,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\META-INF",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_gateway_jar\\livelessons-choreography-gateway.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_redis_jar\\livelessons-data-redis.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_jdbc_jar\\livelessons-data-jdbc.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_docker_jar\\livelessons-cloud-docker.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_heroku_jar\\livelessons-cloud-heroku.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_and_batch_jar\\livelessons-integration-and-batch.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_eai_jar\\livelessons-integration-eai.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_consumer_jar\\livelessons-integration-consumer.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_s3_jar\\livelessons-cloud-s3.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_hystrix_dashboard_service_jar\\livelessons-choreography-hystrix-dashboard-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_bootstrap_autoconfiguration_jar\\livelessons-bootstrap-autoconfiguration.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_session_jar\\livelessons-cloud-session.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_basic_messaging_jar\\livelessons-integration-basic-messaging.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_batch_jar\\livelessons-integration-batch.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_connectors_jar\\livelessons-cloud-connectors.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_hystrix_jar\\livelessons-choreography-hystrix.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_cloudfoundry_jar\\livelessons-cloud-cloudfoundry.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_eureka_service_jar\\livelessons-choreography-eureka-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_cloud_services_jar\\livelessons-cloud-services.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_bootstrap_maven_jar\\livelessons-bootstrap-maven.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_integration_dataflow_service_jar\\livelessons-integration-dataflow-service.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_flyway_jar\\livelessons-data-flyway.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_rest_jar\\livelessons-data-rest.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_elasticsearch_jar\\livelessons-data-elasticsearch.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_bookmark_service_jar\\livelessons-choreography-bookmark-service.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_choreography_contact_service_jar\\livelessons-choreography-contact-service.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_mongodb_jar\\livelessons-data-mongodb.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\building-microservices\\out\\artifacts\\livelessons_data_jpa_jar\\livelessons-data-jpa.jar",
+                "entityCount": 1
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 169,
+        "Wrong Cuts": 20566,
+        "Bytecode Analysis": 592,
+        "Shared Persistency": 110,
+        "Shared Library": 2946,
+        "ESB": 3,
+        "Microservice Greedy": 1565,
+        "Unversioned API": 7646,
+        "Hardcoded Enpoints": 1,
+        "Cyclic Dependency": 2,
+        "API Gateway": 0,
+        "ISI": 1
+    },
+    "apigateway": false
+}

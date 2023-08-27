@@ -1,0 +1,138 @@
+  {
+    "unversionedAPIContext": {
+        "unversionedAPIs": [],
+        "count": 0
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.javaee7.wildfly.samples:services": {
+                "library": "org.javaee7.wildfly.samples:services",
+                "microservices": [
+                    "org.javaee7.wildfly.samples:user",
+                    "org.javaee7.wildfly.samples:everest-web",
+                    "null:catalog",
+                    "org.javaee7.wildfly.samples:order"
+                ],
+                "count": 4
+            },
+            "javax:javaee-api": {
+                "library": "javax:javaee-api",
+                "microservices": [
+                    "org.javaee7.wildfly.samples:everest",
+                    "org.javaee7.wildfly.samples:shoppingcart-msa"
+                ],
+                "count": 2
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\images",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\microservice",
+                "staticFileCount": 4,
+                "entityFileCount": 4
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\monolith",
+                "staticFileCount": 2,
+                "entityFileCount": 4
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\slides",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\contracts_jar\\contracts.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\everest_jar\\everest.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\services_jar\\services.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\order_jar\\order.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\user_jar\\user.jar",
+                "entityCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\microservices\\out\\artifacts\\catalog_jar\\catalog.jar",
+                "entityCount": 2
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "EE"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 132,
+        "Wrong Cuts": 491,
+        "Bytecode Analysis": 378,
+        "Shared Persistency": 165,
+        "Shared Library": 168,
+        "ESB": 3,
+        "Microservice Greedy": 687,
+        "Unversioned API": 1516,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 2,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}

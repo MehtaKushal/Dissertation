@@ -1,0 +1,217 @@
+{
+    "unversionedAPIContext": {
+        "unversionedAPIs": [
+            "",
+            "/userInfo",
+            "/api/inventory/{productCode}",
+            "/{code}",
+            "/api/products/{code}",
+            "/api/inventory",
+            "/api/orders",
+            "/api/orders/{id}",
+            "/api/products"
+        ],
+        "count": 9
+    },
+    "hardCodedEndpointsContext": {
+        "hardcodedEndpoints": [],
+        "totalHardcodedEndpoints": 0,
+        "totalHardcodedPorts": 0,
+        "totalHardcodedIP": 0
+    },
+    "esbContext": {
+        "candidateESBs": []
+    },
+    "cyclicDependency": false,
+    "sharedPersistencyContext": {
+        "sharedPersistencies": []
+    },
+    "sharedLibraryContext": {
+        "sharedLibraries": {
+            "org.springframework.boot:spring-boot-starter-test": {
+                "library": "org.springframework.boot:spring-boot-starter-test",
+                "microservices": [
+                    "com.sivalabs:service-registry",
+                    "com.sivalabs:order-service",
+                    "com.sivalabs:shoppingcart-ui",
+                    "com.sivalabs:oauth2-server",
+                    "com.sivalabs:zipkin-server",
+                    "com.sivalabs:hystrix-dashboard",
+                    "com.sivalabs:catalog-service",
+                    "com.sivalabs:config-server",
+                    "com.sivalabs:inventory-service"
+                ],
+                "count": 9
+            },
+            "org.springframework.cloud:spring-cloud-starter-zipkin": {
+                "library": "org.springframework.cloud:spring-cloud-starter-zipkin",
+                "microservices": [
+                    "com.sivalabs:zipkin-server",
+                    "com.sivalabs:catalog-service",
+                    "com.sivalabs:inventory-service"
+                ],
+                "count": 3
+            },
+            "org.springframework.cloud:spring-cloud-starter-config": {
+                "library": "org.springframework.cloud:spring-cloud-starter-config",
+                "microservices": [
+                    "com.sivalabs:service-registry",
+                    "com.sivalabs:order-service",
+                    "com.sivalabs:shoppingcart-ui",
+                    "com.sivalabs:oauth2-server",
+                    "com.sivalabs:hystrix-dashboard",
+                    "com.sivalabs:catalog-service",
+                    "com.sivalabs:inventory-service"
+                ],
+                "count": 7
+            },
+            "org.springframework.boot:spring-boot-starter-actuator": {
+                "library": "org.springframework.boot:spring-boot-starter-actuator",
+                "microservices": [
+                    "com.sivalabs:order-service",
+                    "com.sivalabs:shoppingcart-ui",
+                    "com.sivalabs:zipkin-server",
+                    "com.sivalabs:hystrix-dashboard"
+                ],
+                "count": 4
+            },
+            "org.springframework.boot:spring-boot-starter-web": {
+                "library": "org.springframework.boot:spring-boot-starter-web",
+                "microservices": [
+                    "com.sivalabs:shoppingcart-ui",
+                    "com.sivalabs:oauth2-server",
+                    "com.sivalabs:zipkin-server"
+                ],
+                "count": 3
+            }
+        }
+    },
+    "microservicesGreedyContext": {
+        "microserviceMetrics": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\.git",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\.idea",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\.mvn",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\catalog-service",
+                "staticFileCount": 0,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\config",
+                "staticFileCount": 2,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\config-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\hystrix-dashboard",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\inventory-service",
+                "staticFileCount": 0,
+                "entityFileCount": 1
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\oauth2-server",
+                "staticFileCount": 2,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\order-service",
+                "staticFileCount": 0,
+                "entityFileCount": 2
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\service-registry",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\shoppingcart-ui",
+                "staticFileCount": 8,
+                "entityFileCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\zipkin-server",
+                "staticFileCount": 0,
+                "entityFileCount": 0
+            }
+        ],
+        "greedyMicroservices": []
+    },
+    "wrongCutsContext": {
+        "entityCounts": [
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out\\artifacts\\oauth2_server_jar\\oauth2-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out\\artifacts\\shoppingcart_ui_jar\\shoppingcart-ui.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out\\artifacts\\zipkin_server_jar\\zipkin-server.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out\\artifacts\\service_registry_jar\\service-registry.jar",
+                "entityCount": 0
+            },
+            {
+                "path": "C:\\D\\Kushal\\git\\spring-boot-microservices-series\\out\\artifacts\\order_service_jar\\order-service.jar",
+                "entityCount": 2
+            }
+        ],
+        "possibleWrongCuts": []
+    },
+    "inappropriateServiceIntimacyContext": {
+        "sharedIntimacies": [],
+        "count": 0
+    },
+    "tooManyStandardsContext": {
+        "presentationTypes": [
+            "STATIC"
+        ],
+        "businessTypes": [
+            "SPRING"
+        ],
+        "dataTypes": []
+    },
+    "times": {
+        "Too Many Standards": 118,
+        "Wrong Cuts": 182,
+        "Bytecode Analysis": 466,
+        "Shared Persistency": 36,
+        "Shared Library": 182,
+        "ESB": 2,
+        "Microservice Greedy": 382,
+        "Unversioned API": 978,
+        "Hardcoded Enpoints": 0,
+        "Cyclic Dependency": 2,
+        "API Gateway": 0,
+        "ISI": 0
+    },
+    "apigateway": false
+}
